@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-java@v2
         with:
           java-version: '8'
-          distribution: 'microsoft'
+          distribution: 'temurin'
       
       - name: Build app
         run: mvn clean package
