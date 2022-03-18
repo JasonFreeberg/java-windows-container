@@ -42,5 +42,5 @@ jobs:
         
       - name: Build image
         run: |
-          docker build . -t ${{ env.TAG }}
-          docker push . -t ${{ env.TAG }} 
+          docker build -t ${{ env.TAG }} . 
+          docker push -t ${{ env.TAG }} 
