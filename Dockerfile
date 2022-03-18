@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/windows/servercore
+FROM mcr.microsoft.com/windows/servercore:ltsc2022
 
 # everything will be installed inside this directory inside the container
 WORKDIR "C:/ProgramData"
