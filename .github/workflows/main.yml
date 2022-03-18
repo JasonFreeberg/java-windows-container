@@ -30,7 +30,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ github.token }
+          password: ${{ github.token }}
           
       - name: Set tag name for commits
         if: ${{ github.event_name == 'push' }}
