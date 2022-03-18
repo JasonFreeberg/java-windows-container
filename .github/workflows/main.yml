@@ -33,4 +33,4 @@ jobs:
       - name: Build image
         run: |
           docker build -t ghcr.io/jasonfreeberg/java-windows-container:${{ github.sha }} . 
-          docker push -t ghcr.io/jasonfreeberg/java-windows-container:${{ github.sha }}
+          docker push ghcr.io/jasonfreeberg/java-windows-container:${{ github.sha }}
