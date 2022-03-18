@@ -40,6 +40,12 @@ jobs:
         if: ${{ github.event_name == 'release' }}
         run: echo "TAG=ghcr.io/${GITHUB_REPOSITORY,,}:${GITHUB_REF##*/}" >>${GITHUB_ENV}
         
+      - run: echo $env:TAG
+      
+      - run: echo ${{ env.TAG }}
+      
+      - run: dir env:
+        
       - name: Build image
         run: |
           docker build -t ${{ env.TAG }} . 
