@@ -44,7 +44,7 @@ jobs:
       
       - run: echo ${{ env.TAG }}
       
-      - run: dir env:
+      - run: 'dir env:'
         
       - name: Build image
         run: |
